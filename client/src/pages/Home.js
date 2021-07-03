@@ -1,6 +1,6 @@
 import light from "../assets/light.png";
 import dark from "../assets/dark.png";
-import '../../css/Home.css'
+import "../css/Home.css";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
 
         <div className="demos">
           <div className="left">
-            <a href="#" target="_blank">
+            <a href="/home-light" target="_blank">
               <div className="desc">
                 <img src={light} alt="image" />
                 <h3 className="title">Light Demo</h3>
@@ -38,7 +38,9 @@ const Home = () => {
           <span className="anim"></span>
           <span className="anim"></span>
           <span className="anim"></span>
-          <a href="#" target="_blank" className="pricing_info anim">-50%</a>
+          <a href="#" target="_blank" className="pricing_info anim">
+            -50%
+          </a>
         </div>
       </div>
     </>

@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+.svg {
+  width: 15px;
+  height: 15px;
+}
+
+a {
+  border: none;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+/* ================================================HOME LIGHT================================================== */
+
+.all-wrap {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+
+/* ==================================================TAB LIST================================================= */
+
+.react-tabs__tab-list {
+  position: absolute;
+  right: 0;
+  top: 158px;
+  z-index: 2;
+}
+
+.all-wrap .left-part {
+  width: 450px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-alight-items: center;
+  align-items: center;
+  z-index: 10;
+  padding: 0 100px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1600px) {
+  .all-wrap .left-part {
+    width: 400px;
+  }
+}
+
+.all-wrap .left-part-inner {
+  width: 100%;
+  height: auto;
+}
+
+/* =====================================TAB LIST LOGO===================================== */
+
+.all-wrap .left-part img {
+  max-width: 150px;
+}
+
+/* =====================================TAB LIST MENU===================================== */
+
+.all-wrap .left-part .menu {
+  padding: 40px 0 50px 0;
+}
+
+.all-wrap .left-part .menu ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.all-wrap .left-part .menu ul li {
+  margin: 0;
+  width: 100%;
+  float: left;
+  text-decoration: none;
+  color: #767676;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.all-wrap .left-part .menu ul li:hover {
+  color: #000;
+  letter-spacing: 2px;
+}
+
+.all-wrap .left-part .menu ul li .svg {
+  display: none;
+}
+
+.all-wrap .left-part .copyright {
+  width: 100%;
+  float: left;
+}
+
+.all-wrap .left-part .copyright p {
+  font-size: 15px;
+  color: #999;
+  line-height: 25px;
+  font-style: italic;
+}
+
+.all-wrap .left-part .copyright a {
+  text-decoration: none;
+  color: #787878;
+  font-weight: 500;
+  padding-left: 5px;
+  transition: all 0.3s ease;
+}
+
+/* ===============================================END TAB LIST================================================= */
+
+/* ================================================CONTAINER=================================================== */
+
+.all-wrap .right-part {
+  width: 100%;
+  min-height: 100vh;
+  float: left;
+  position: relative;
+  background-color: #f8f8f8;
+  padding-left: 450px;
+}
+
+@media screen and (max-width: 1600px) {
+  .all-wrap .right-part {
+    padding-left: 400px;
+  }
+}
+
+.all-wrap .right-part .right-part_in {
+  position: relative;
+  width: 100%;
+  float: left;
+  clear: both;
+  border-left: 1px solid #ebebeb;
+  min-height: 100vh;
+}
+
+.tm_section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-left: 450px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 0 40px;
+  position: relative;
+  clear: both;
+}
+
+.tm_section .container {
+  height: 100%;
+}
+
+/* ===============================HOME CONTAINER============================== */
+
+.tm_home {
+  width: 100%;
+  min-height: 100vh;
+  clear: both;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+.tm_home,
+.tm_home .home_content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* =============================AVATAR========================== */
+
+.tm_home .avatar {
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  border-radius: 100%;
+}
+
+.tm_home .avatar .image {
+  background-image: url("../assets/1.jpg");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 9px hsl(0deg 0% 100% / 30%);
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  overflow: hidden;
+  -webkit-animation: morph 8s ease-in-out 1s infinite;
+  animation: morph 8s ease-in-out 1s infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+/* =========================DETAILS============================== */
+
+.tm_home .details {
+  margin-left: 80px;
+}
+
+.tm_home .details .name {
+  font-size: 55px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.tm_home .details .job {
+  font-style: italic;
+  font-weight: 500;
+  max-width: 450px;
+  margin-bottom: 30px;
+  color: #76768a;
+}
+
+.social {
+  margin: 0;
+  list-style-type: none;
+}
+
+.tm_home .social {
+  float: left;
+  width: 100%;
+}
+
+.social li {
+  margin: 0 15px 0 0;
+  display: inline-block;
+}
