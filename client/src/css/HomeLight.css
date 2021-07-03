@@ -2,9 +2,21 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Mulish";
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-weight: 400;
+  background-color: #fff;
+  color: #767676;
+  box-sizing: border-box;
+}
+
 .svg {
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
 }
 
 a {
@@ -13,6 +25,7 @@ a {
 
 ul {
   list-style-type: disc;
+  padding: 0;
 }
 
 /* ================================================HOME LIGHT================================================== */
@@ -69,17 +82,20 @@ ul {
 /* =====================================TAB LIST MENU===================================== */
 
 .all-wrap .left-part .menu {
-  padding: 40px 0 50px 0;
+  padding: 30px 0 40px;
+  width: 100%;
+  float: left;
 }
 
 .all-wrap .left-part .menu ul {
   margin: 0;
   list-style-type: none;
+  padding: 0;
 }
 
 .all-wrap .left-part .menu ul li {
   margin: 0;
-  width: 100%;
+  width: 120%;
   float: left;
   text-decoration: none;
   color: #767676;
@@ -104,7 +120,7 @@ ul {
 }
 
 .all-wrap .left-part .copyright p {
-  font-size: 15px;
+  font-size: 16px;
   color: #999;
   line-height: 25px;
   font-style: italic;
@@ -131,8 +147,8 @@ ul {
   padding-left: 450px;
 }
 
-@media screen and (max-width: 1600px) {
-  .all-wrap .right-part {
+@media screen and (max-width: 1600) {
+  .right-part {
     padding-left: 400px;
   }
 }
@@ -155,6 +171,12 @@ ul {
   padding-left: 450px;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+@media screen and (max-width: 1600) {
+  .tm_section {
+    padding-left: 400px;
+  }
 }
 
 .container {
@@ -240,15 +262,20 @@ ul {
 
 .tm_home .details .name {
   font-size: 55px;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 19px;
+  display: block;
+  line-height: 50px;
+  color: black;
 }
 
 .tm_home .details .job {
   font-style: italic;
   font-weight: 500;
   max-width: 450px;
+  margin-top: 30px;
   margin-bottom: 30px;
   color: #76768a;
 }
@@ -266,4 +293,135 @@ ul {
 .social li {
   margin: 0 15px 0 0;
   display: inline-block;
+}
+
+/* ======================================= MEDIA =============================================== */
+
+@media screen and (max-width: 1600px) {
+  .tm_section {
+    padding-left: 400px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .all-wrap .right-part {
+    padding-left: 400px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  /* ================================ NAVBAR ============================= */
+  .react-tabs__tab-list {
+    top: 225px;
+  }
+
+  .all-wrap .left-part {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 30px rgb(62 68 125 / 8%);
+  }
+
+  .all-wrap .left-part .left-part-inner {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+
+  .all-wrap .left-part .left-part-inner .navbar-brand img {
+    max-width: 100px;
+  }
+
+  .all-wrap .left-part .left-part-inner .menu {
+    padding: 0;
+    width: auto;
+    float: none;
+  }
+
+  .all-wrap .left-part .left-part-inner .menu ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .all-wrap .left-part .left-part-inner .menu ul li:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .all-wrap .left-part .left-part-inner .menu ul li .svg {
+    display: block;
+    width: 15px;
+    height: 15px;
+  }
+
+  .all-wrap .left-part .left-part-inner .menu ul li .menu-content {
+    display: none;
+  }
+
+  .all-wrap .left-part .left-part-inner .copyright {
+    display: none;
+  }
+
+  /* ============================== CONTENT ============================= */
+
+  .all-wrap .right-part {
+    padding-left: 0;
+  }
+
+  .all-wrap .right-part_in {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .tm_section {
+    padding-left: 0;
+  }
+
+  .tm_home {
+    padding-top: 170px;
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .tm_section .container {
+    padding: 0 20px;
+  }
+
+  .tm_home .home_content {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tm_home .avatar {
+    margin-bottom: 30px;
+  }
+
+  .tm_home .details {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tm_home .avatar {
+    min-width: 200px;
+    min-height: 200px;
+  }
+
+  .tm_home .details .name {
+    font-size: 35px;
+  }
 }
