@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.about-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.about-img {
+  margin-top: 100px;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.about-wrapper .description {
+  margin-top: 40px;
+}
+
+.about-wrapper .description .title {
+  width: 100%;
+  color: black;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.about-wrapper .description .content {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.about-wrapper .description .content .left {
+  width: 55%;
+  padding-right: 50px;
+}
+
+.about-wrapper .description .content .left .container_text {
+  font-style: italic;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.about-wrapper .description .content .left button {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: black;
+  color: white;
+  padding: 18px 40px;
+  font-size: 15px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.about-wrapper .description .content .left button:hover {
+  letter-spacing: 2px;
+}
+
+.about-wrapper .description .content .right {
+  width: 45%;
+  padding-left: 50px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+.about-wrapper .description .content .right ul {
+  list-style-type: none;
+}
+
+.about-wrapper .description .content .right ul li span {
+  min-width: 90px;
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+}
+
+.about-wrapper .description .content .right ul li a {
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #767676;
+}
+
+.about-wrapper .description .content .right ul li a:hover {
+  color: #000;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1040px) {
+  .about-img {
+    margin-top: 150px;
+  }
+
+  .about-wrapper .description .content {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .about-wrapper .description .content .left {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .about-wrapper .description .content .right {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 100px;
+    margin-top: 0;
+  }
+}

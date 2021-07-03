@@ -1,10 +1,12 @@
-import HomeContainer from './HomeContainer';
+// import HomeContainer from "./HomeContainer";
+import AboutContainer from "./AboutContainer";
 
 const Container = () => {
   return (
     <>
       <div className="react-tabs__tab-panel" id="react-tabs-1">
-        <HomeContainer />
+        {/* <HomeContainer /> */}
+        <AboutContainer />
       </div>
     </>
   );
