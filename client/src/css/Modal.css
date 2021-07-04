@@ -1,3 +1,4 @@
+
 .modal {
   position: fixed;
   top: 0;
@@ -6,21 +7,21 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 99;
+  color: black;
 }
 
-.modal-main {
-  position: fixed;
-  background: white;
-  width: 70%;
-  height: 70vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  outline: none;
-  overflow-x: hidden;
-  overflow-y: auto;
+.modal button {
+  background: transparent;
+  border: none;
+  top: 13%;
+  left: 86%;
+}
+
+.modal .cancel-btn {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  filter: invert(1);
 }
 
 .display-block {
@@ -31,9 +32,27 @@
   display: none;
 }
 
+.modal-main {
+  position: fixed;
+  background: white;
+  width: 70%;
+  height: 75vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-main .modal-main-container {
+  padding: 100px 70px 80px 70px;
+}
+
 .modal-main .skill {
   width: 100%;
-  padding: 100px 70px 80px 70px;
   display: -webkit-flex;
   display: flex;
 }
@@ -47,30 +66,28 @@
   padding-left: 10%;
 }
 
-.modal-main .skill .about_title h3{
-  color: #000;
+.title h3 {
   font-size: 20px;
   font-weight: 800;
   margin-bottom: 30px;
 }
 
-.progress .progress-inner {
+.modal-main .skill .progress .progress-inner {
   width: 100%;
   margin-bottom: 17px;
   font-size: 16px;
   font-weight: 400;
-  color: black;
   font-style: italic;
 }
 
-.progress .progress-inner span {
+.modal-main .skill .progress .progress-inner span {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
-.progress .progress-inner .bar_background {
+.modal-main .skill .progress .progress-inner .bar_background {
   background: rgba(0, 0, 0, 0.09);
   width: 100%;
   min-width: 100%;
@@ -78,14 +95,133 @@
   height: 3px;
 }
 
-.progress .progress-inner .bar_background .bar {
+.modal-main .skill .progress .progress-inner .bar_background .bar {
   width: 100%;
   height: 100%;
 }
 
-.progress .progress-inner .bar_background .bar .bar-in {
+.modal-main .skill .progress .progress-inner .bar_background .bar .bar-in {
   height: 100%;
   background: #000;
   width: 0%;
   overflow: hidden;
+}
+
+.modal-main .fun-fact {
+  margin-top: 80px;
+}
+
+.modal-main .fun-fact .title {
+  margin-bottom: 40px;
+}
+
+.modal-main .fun-fact .box-container {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.modal-main .fun-fact .box-container .box {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 40px 20px 40px 20px;
+  margin: 0 10px 0 10px;
+}
+
+.modal-main .fun-fact .box-container .box p {
+  color: #767676;
+}
+
+.modal-main .partners .partners-container {
+  margin-top: 50px;
+}
+
+.modal-main .partners .partners-container .partner-box {
+  background-color: #eee;
+  margin: 0 10px 0 10px;
+}
+
+.modal-main .partners .partners-container .partner-box img {
+  width: 100%;
+  height: 90px;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.modal-main .partners .partners-container .partner-box img:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .modal-main {
+    width: 90%;
+  }
+
+  .modal button {
+    top: 4%;
+    left: 92%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .modal-main {
+    width: 95%;
+  }
+
+  .modal-main .modal-main-container {
+    padding: 100px 20px 80px 20px;
+  }
+
+  .modal-main .skill {
+    width: 100%;
+    display: block;
+  }
+
+  .modal-main .skill .left {
+    width: 100%;
+    margin: 0 0 60px 0;
+  }
+
+  .modal-main .skill .right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-main {
+    width: 70%;
+  }
+
+  .modal-main .modal-main-container {
+    padding: 60px 20px 80px 20px;
+  }
+
+  .modal-main .fun-fact .box-container {
+    display: block;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .modal-main .fun-fact .box-container .box {
+    padding: 40px 20px 40px 20px;
+    margin: 30px 0 30px 0;
+  }
+
+  .modal-main .partners .partners-container .partner-box {
+    background-color: #eee;
+    margin: 0 5px 0 5px;
+  }
+
+  .modal-main .partners .partners-container .partner-box img {
+    height: 60px;
+  }
+
+  .modal button {
+    top: 4%;
+    left: 78%;
+  }
 }

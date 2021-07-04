@@ -9,7 +9,7 @@ const SkillPoint = ({ skill, dataValue }) => {
       </span>
       <div className="bar_background">
         <div className="bar">
-          <div className="bar-in" style={{width: dataValue + "%"}}/>
+          <div className="bar-in" style={{ width: dataValue + "%" }} />
         </div>
       </div>
     </div>

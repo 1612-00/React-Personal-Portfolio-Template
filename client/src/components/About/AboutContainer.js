@@ -1,6 +1,7 @@
 import avatar from "../../assets/1.jpg";
 import "../../css/AboutContainer.css";
 import { AboutContext } from "../../pages/HomeLight";
+import cancel from "../../assets/cancel.svg";
 
 const AboutContainer = () => {
   return (
