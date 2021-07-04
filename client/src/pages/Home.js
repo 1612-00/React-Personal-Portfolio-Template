@@ -1,5 +1,6 @@
 import light from "../assets/light.png";
 import dark from "../assets/dark.png";
+import logo from '../assets/logo.png'
 import "../css/Home.css";
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
     <>
       <div className="container-wrapper">
         <div className="short-info">
-          <h2>TOKYO</h2>
+          <img src={logo} alt="logo" />
           <h3>React Personal Portfolio Template</h3>
         </div>
 

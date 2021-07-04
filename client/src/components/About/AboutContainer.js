@@ -1,5 +1,6 @@
-import avatar from "../assets/1.jpg";
-import "../css/AboutContainer.css";
+import avatar from "../../assets/1.jpg";
+import "../../css/AboutContainer.css";
+import { AboutContext } from "../../pages/HomeLight";
 
 const AboutContainer = () => {
   return (
@@ -17,7 +18,11 @@ const AboutContainer = () => {
                 to travel all over Europe to capture your big day in candid and
                 authentic photos. I will create a lasting memory of the people.
               </p>
-              <button>Read More</button>
+              <AboutContext.Consumer>
+                {
+                  (value) => <button onClick={value}>Read More</button>
+                }
+              </AboutContext.Consumer>
             </div>
             <div className="right">
               <ul>

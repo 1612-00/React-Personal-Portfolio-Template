@@ -1,5 +1,5 @@
 // import HomeContainer from "./HomeContainer";
-import AboutContainer from "./AboutContainer";
+import AboutContainer from "./About/AboutContainer";
 
 const Container = () => {
   return (

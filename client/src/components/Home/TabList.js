@@ -1,9 +1,9 @@
-import logo from "../assets/logo.png";
-import homeRun from "../assets/home-run.svg";
-import avatar from "../assets/avatar.svg";
-import briefcase from "../assets/briefcase.svg";
-import paper from "../assets/paper.svg";
-import mail from "../assets/mail.svg";
+import logo from "../../assets/logo.png";
+import homeRun from "../../assets/home-run.svg";
+import avatar from "../../assets/avatar.svg";
+import briefcase from "../../assets/briefcase.svg";
+import paper from "../../assets/paper.svg";
+import mail from "../../assets/mail.svg";
 import Tab from './Tab';
 
 const TabList = () => {

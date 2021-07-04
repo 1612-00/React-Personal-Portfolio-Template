@@ -1,0 +1,91 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 99;
+}
+
+.modal-main {
+  position: fixed;
+  background: white;
+  width: 70%;
+  height: 70vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.modal-main .skill {
+  width: 100%;
+  padding: 100px 70px 80px 70px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.modal-main .skill .left {
+  width: 45%;
+}
+
+.modal-main .skill .right {
+  width: 55%;
+  padding-left: 10%;
+}
+
+.modal-main .skill .about_title h3{
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.progress .progress-inner {
+  width: 100%;
+  margin-bottom: 17px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  font-style: italic;
+}
+
+.progress .progress-inner span {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.progress .progress-inner .bar_background {
+  background: rgba(0, 0, 0, 0.09);
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  height: 3px;
+}
+
+.progress .progress-inner .bar_background .bar {
+  width: 100%;
+  height: 100%;
+}
+
+.progress .progress-inner .bar_background .bar .bar-in {
+  height: 100%;
+  background: #000;
+  width: 0%;
+  overflow: hidden;
+}
