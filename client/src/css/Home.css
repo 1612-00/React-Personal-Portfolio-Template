@@ -176,6 +176,20 @@
   }
 }
 
+@keyframes animationFirstLoadX {
+  0% {
+    opacity: 0;
+    webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    webkit-transform: none;
+    transform: none;
+  }
+}
+
 @keyframes containerPageAnim {
   0% {
     opacity: 0;
