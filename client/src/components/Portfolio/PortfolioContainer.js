@@ -4,6 +4,8 @@ import portfolio2 from "../../assets/portfolio-2.jpg";
 import portfolio3 from "../../assets/portfolio-3.jpg";
 import portfolio4 from "../../assets/portfolio-4.jpg";
 import "../../css/Portfolio.css";
+import PortfolioItem from "./PortfolioItem";
+import SimpleReactLightBox, { SRLWrapper } from "simple-react-lightbox";
 
 const PortfolioContainer = () => {
   return (
@@ -29,106 +31,44 @@ const PortfolioContainer = () => {
 
             <TabPanel>
               <ul className="portfolio-list">
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio1} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio2} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio3} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio4} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
+                <SRLWrapper>
+                  <PortfolioItem image={portfolio1} caption="Portfolio" />
+                  <PortfolioItem image={portfolio2} caption="Portfolio" />
+                  <PortfolioItem image={portfolio3} caption="Portfolio" />
+                  <PortfolioItem image={portfolio4} caption="Portfolio" />
+                </SRLWrapper>
               </ul>
             </TabPanel>
             <TabPanel>
               <ul className="portfolio-list">
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio3} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio4} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
+                <SRLWrapper>
+                  <PortfolioItem image={portfolio3} caption="Ui/Ux" />
+                  <PortfolioItem image={portfolio4} caption="Ui/Ux" />
+                </SRLWrapper>
               </ul>
             </TabPanel>
             <TabPanel>
               <ul className="portfolio-list">
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio1} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio2} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
+                <SRLWrapper>
+                  <PortfolioItem image={portfolio1} caption="Website" />
+                  <PortfolioItem image={portfolio2} caption="Website" />
+                </SRLWrapper>
               </ul>
             </TabPanel>
             <TabPanel>
               <ul className="portfolio-list">
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio3} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio4} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
+                <SRLWrapper>
+                  <PortfolioItem image={portfolio3} caption="Graphic" />
+                  <PortfolioItem image={portfolio4} caption="Graphic" />
+                </SRLWrapper>
               </ul>
             </TabPanel>
             <TabPanel>
               <ul className="portfolio-list">
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio1} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div className="inner">
-                    <a href="#">
-                      <img src={portfolio2} alt="portfolioImg" />
-                    </a>
-                  </div>
-                </li>
+                <SRLWrapper>
+                  <PortfolioItem image={portfolio1} caption="Creative" />
+                  <PortfolioItem image={portfolio2} caption="Creative" />
+                </SRLWrapper>
               </ul>
             </TabPanel>
           </Tabs>

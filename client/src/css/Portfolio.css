@@ -68,6 +68,11 @@
   color: black;
 }
 
+.react-tabs__tab--selected {
+  color: black;
+  letter-spacing: 2px;
+}
+
 /* =======================================TAB PANEL========================================== */
 
 .portfolio-filter .react-tabs__tab-panel .portfolio-list {
@@ -119,4 +124,32 @@
 
 .portfolio-filter .react-tabs__tab-panel .portfolio-list li .inner a img:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-container {
+    margin-top: 180px;
+  }
+
+  .portfolio-filter .react-tabs__tab-list {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    top: 140px;
+    left: 0;
+    margin-left: 10px;
+  }
+
+  .portfolio-filter .react-tabs__tab-panel .portfolio-list {
+    margin-top: 40px;
+    width: 100%;
+    position: absolute;
+  }
+
+  .portfolio-filter .react-tabs__tab-panel .portfolio-list li {
+    margin: 0 0 50px;
+    height: 415px;
+    width: 100%;
+    padding-left: 50px;
+  }
 }

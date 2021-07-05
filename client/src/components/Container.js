@@ -3,6 +3,7 @@ import { TabContext } from "./contexts/TabContext";
 import HomeContainer from "./Home/HomeContainer";
 import AboutContainer from "./About/AboutContainer";
 import PortfolioContainer from "./Portfolio/PortfolioContainer";
+import NewsContainer from './News/NewsContainer';
 
 const Container = () => {
   const {
@@ -17,7 +18,7 @@ const Container = () => {
         {tabSelected === "Home" && <HomeContainer />}
         {tabSelected === "About" && <AboutContainer />}
         {tabSelected === "Portfolio" && <PortfolioContainer />}
-        {tabSelected === "News" && <HomeContainer />}
+        {tabSelected === "News" && <NewsContainer />}
         {tabSelected === "Contact" && <HomeContainer />}
       </div>
     </>
