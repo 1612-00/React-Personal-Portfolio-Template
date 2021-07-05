@@ -1,0 +1,53 @@
+.portfolio-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 100px;
+}
+
+.portfolio-container .portfolio-title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: 62px;
+}
+
+.portfolio-container .portfolio-title .title-flex {
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.portfolio-container .portfolio-title .title-flex span {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 4px 10px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.portfolio-container .portfolio-title .title-flex h3 {
+  font-size: 31px;
+  font-weight: 900;
+  color: black;
+}
+
+/* .portfolio-filter ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.portfolio-filter ul .react-tabs__tab-list {
+  position: absolute;
+  right: 0;
+  top: 158px;
+  z-index: 2;
+} */

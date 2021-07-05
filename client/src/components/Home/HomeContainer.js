@@ -1,8 +1,8 @@
-import facebook from "../assets/facebook.svg";
-import twitter from "../assets/twitter.svg";
-import instagram from "../assets/instagram.svg";
-import dribbble from "../assets/dribbble.svg";
-import tiktok from "../assets/tik-tok.svg";
+import facebook from "../../assets/facebook.svg";
+import twitter from "../../assets/twitter.svg";
+import instagram from "../../assets/instagram.svg";
+import dribbble from "../../assets/dribbble.svg";
+import tiktok from "../../assets/tik-tok.svg";
 import SocialLink from "./SocialLink";
 
 const HomeContainer = () => {

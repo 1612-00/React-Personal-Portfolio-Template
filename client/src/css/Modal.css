@@ -8,6 +8,8 @@
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 99;
   color: black;
+  animation-name: modalAnim;
+  animation-duration: 0.3s; 
 }
 
 .modal button {
@@ -223,5 +225,15 @@
   .modal button {
     top: 4%;
     left: 78%;
+  }
+}
+
+@keyframes modalAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

@@ -8,6 +8,8 @@
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  animation-name: containerPageAnim;
+  animation-duration: 1s;
 }
 
 .about-img {

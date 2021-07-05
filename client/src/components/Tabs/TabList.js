@@ -4,7 +4,7 @@ import avatar from "../../assets/avatar.svg";
 import briefcase from "../../assets/briefcase.svg";
 import paper from "../../assets/paper.svg";
 import mail from "../../assets/mail.svg";
-import Tab from './Tab';
+import Tab from "./Tab";
 
 const TabList = () => {
   return (

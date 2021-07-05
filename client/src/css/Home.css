@@ -31,7 +31,7 @@
 .container-wrapper .intro_line_2 {
   left: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);  
+  transform: translateY(-50%);
 }
 
 .container-wrapper .intro_line_3 {
@@ -50,6 +50,14 @@
   padding: 0 10%;
   transition: 0.25s ease-in-out;
   transform: translateY(0px);
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: animationFirstLoad;
 }
 
 .container-wrapper .left:hover,
@@ -151,5 +159,33 @@
     -webkit-transform: scale(2);
     transform: scale(2);
     opacity: 0;
+  }
+}
+
+@keyframes animationFirstLoad {
+  0% {
+    opacity: 0;
+    webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes containerPageAnim {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-3%);
+    transform: translateX(-3%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }

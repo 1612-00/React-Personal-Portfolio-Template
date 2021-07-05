@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "../css/HomeLight.css";
-import TabList from "./../components/Home/TabList";
+import ListTab from "../components/Tabs/TabList";
 import Container from "./../components/Container";
 import Modal from "../components/About/Modal";
+import TabContextProvider from "../components/contexts/TabContext";
 
 export const AboutContext = React.createContext();
 
 const HomeLight = () => {
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
 
   const showModal = () => {
     setOpenModal(true);
@@ -19,34 +20,36 @@ const HomeLight = () => {
 
   return (
     <>
-      <AboutContext.Provider value={showModal}>
-        <div className="all-wrap">
-          <div className="react-tabs">
-            {/* ===================================TAB LIST==================================== */}
-            <ul className="react-tabs__tab-list">
-              <div className="left-part">
-                <div className="left-part-inner">
-                  <TabList />
+      <TabContextProvider>
+        <AboutContext.Provider value={showModal}>
+          <div className="all-wrap">
+            <div className="react-tabs">
+              {/* ===================================TAB LIST==================================== */}
+              <ul className="react-tabs__tab-list">
+                <div className="left-part">
+                  <div className="left-part-inner">
+                    <ListTab />
+                  </div>
                 </div>
-              </div>
-            </ul>
+              </ul>
 
-            {/* ===================================CONTAINER=================================== */}
-            <div className="right-part">
-              <div className="right-part_in">
-                <div className="tm_section">
-                  <div className="container">
-                    <Container />
+              {/* ===================================CONTAINER=================================== */}
+              <div className="right-part">
+                <div className="right-part_in">
+                  <div className="tm_section">
+                    <div className="container">
+                      <Container />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="modal-container">
-          <Modal show={openModal} handleClose={hideModal} />
-        </div>
-      </AboutContext.Provider>
+          <div className="modal-container">
+            <Modal show={openModal} handleClose={hideModal} />
+          </div>
+        </AboutContext.Provider>
+      </TabContextProvider>
     </>
   );
 };

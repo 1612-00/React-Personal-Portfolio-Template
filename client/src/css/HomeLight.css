@@ -110,6 +110,11 @@ ul {
   letter-spacing: 2px;
 }
 
+.all-wrap .left-part .menu ul .active {
+  color: black;
+  letter-spacing: 2px;
+}
+
 .all-wrap .left-part .menu ul li .svg {
   display: none;
 }
@@ -211,6 +216,8 @@ ul {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
+  animation-name: containerPageAnim;
+  animation-duration: 1s;
 }
 
 /* =============================AVATAR========================== */

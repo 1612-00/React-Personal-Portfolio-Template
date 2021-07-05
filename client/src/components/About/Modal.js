@@ -18,6 +18,7 @@ const Modal = ({ handleClose, show }) => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
+    arrows: false,  
     responsive: [
       {
         breakpoint: 830,
