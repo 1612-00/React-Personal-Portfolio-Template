@@ -4,6 +4,7 @@ import HomeContainer from "./Home/HomeContainer";
 import AboutContainer from "./About/AboutContainer";
 import PortfolioContainer from "./Portfolio/PortfolioContainer";
 import NewsContainer from './News/NewsContainer';
+import ContactContainer from './Contact/ContactContainer';
 
 const Container = () => {
   const {
@@ -19,7 +20,7 @@ const Container = () => {
         {tabSelected === "About" && <AboutContainer />}
         {tabSelected === "Portfolio" && <PortfolioContainer />}
         {tabSelected === "News" && <NewsContainer />}
-        {tabSelected === "Contact" && <HomeContainer />}
+        {tabSelected === "Contact" && <ContactContainer />}
       </div>
     </>
   );

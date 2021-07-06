@@ -1,0 +1,43 @@
+.contact-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 100px;
+}
+
+.contact-container .contact-title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: 62px;
+  animation-name: animationFirstLoadX;
+  animation-duration: 1s;
+}
+
+.contact-container .contact-title .title-flex {
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.contact-container .contact-title .title-flex span {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 4px 10px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.contact-container .contact-title .title-flex h3 {
+  font-size: 31px;
+  font-weight: 900;
+  color: black;
+}

@@ -18,7 +18,7 @@ const Card = ({ image, author, date, title }) => {
             </div>
             <h3 className="title">{title}</h3>
             <div className="read-more">
-              <a>
+              <a href="#">
                 <span>Read More</span>
               </a>
             </div>
